@@ -6,14 +6,14 @@ dotenv.config();
 mongoose.connect(process.env.MONGO_URL);
 
 const products = [
-    { name: "Laptop", price: 80000, image: "laptop.png" },
-    { name: "Mouse", price: 1500, image: "mouse.png" },
-    { name: "Keyboard", price: 2000, image: "keyboard.png" },
-    { name: "Phone", price: 30000, image: "phone.png" },
-    { name: "Headphones", price: 2500, image: "headphones.png" },
-    { name: "Earphones", price: 500, image: "earphones.png" }
-
+  { name: "Laptop", price: 80000, image: "laptop.jpg" },
+  { name: "Mouse", price: 1500, image: "mouse.jpg" },
+  { name: "Keyboard", price: 2000, image: "keyboard.jpg" },
+  { name: "Phone", price: 30000, image: "phone.jpeg" },
+  { name: "Headphones", price: 2500, image: "headphones.jpg" },
+  { name: "Earphones", price: 500, image: "earphones.jpg" },
 ];
+
 
 async function seed() {
     await Product.deleteMany();

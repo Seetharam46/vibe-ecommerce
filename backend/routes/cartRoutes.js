@@ -38,10 +38,11 @@ router.get('/', async (req, res) => {
   }
 });
 
-// 🗑️ Delete Item from Cart
+// 🗑️ Delete Item from Cart (by product ID)
 router.delete('/:id', async (req, res) => {
   try {
-    await Cart.findByIdAndDelete(req.params.id);
+    const deleted = await Cart.findOneAndDelete({ product: req.params.id });
+    if (!deleted) return res.status(404).json({ message: 'Item not found in cart' });
     res.json({ message: 'Item removed from cart' });
   } catch (err) {
     console.error(err);
@@ -49,12 +50,12 @@ router.delete('/:id', async (req, res) => {
   }
 });
 
-// ✏️ Update Cart Item Quantity
+// ✏️ Update Cart Item Quantity (by product ID)
 router.put('/:id', async (req, res) => {
   try {
     const { qty } = req.body;
-    const cartItem = await Cart.findById(req.params.id);
-    if (!cartItem) return res.status(404).json({ message: 'Cart item not found' });
+    const cartItem = await Cart.findOne({ product: req.params.id });
+    if (!cartItem) return res.status(404).json({ message: 'Item not found in cart' });
 
     cartItem.qty = qty;
     await cartItem.save();
