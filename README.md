@@ -6,17 +6,16 @@ Users can browse products, add items to the cart, update quantities, and complet
 ## 🖼️ Project Preview
 
 ### 🏠 Home Page
-![Home Page](https://raw.githubusercontent.com/Seetharam46/mock-ecom-cart/main/screenshots/home.png)
+![Home Page](https://raw.githubusercontent.com/Seetharam46/vibe-ecommerce/main/screenshots/home.png)
 
 ### 🛒 Cart Page
-![Cart Page](https://raw.githubusercontent.com/Seetharam46/mock-ecom-cart/main/screenshots/cart.png)
+![Cart Page](https://raw.githubusercontent.com/Seetharam46/vibe-ecommerce/main/screenshots/cart.png)
 
 ### 💳 Checkout Page
-![Checkout Page](https://raw.githubusercontent.com/Seetharam46/mock-ecom-cart/main/screenshots/checkout.png)
+![Checkout Page](https://raw.githubusercontent.com/Seetharam46/vibe-ecommerce/main/screenshots/checkout.png)
 
 ### 💳 Order Placed
-![Checkout Page](https://raw.githubusercontent.com/Seetharam46/mock-ecom-cart/main/screenshots/order-success.png)
----
+![Order Success](https://raw.githubusercontent.com/Seetharam46/vibe-ecommerce/main/screenshots/order-success.png)
 
 ---
 
