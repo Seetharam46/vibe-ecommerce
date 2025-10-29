@@ -17,6 +17,11 @@ Users can browse products, add items to the cart, update quantities, and complet
 ### 💳 Order Placed
 ![Order Success](https://raw.githubusercontent.com/Seetharam46/vibe-ecommerce/main/screenshots/order-success.png)
 
+### 🎥 Project Demo
+
+[![Watch Demo Video](https://raw.githubusercontent.com/Seetharam46/vibe-ecommerce/main/screenshots/home.png)](screenshots/demo.mp4)
+
+
 ---
 
 ## 🚀 Features
